@@ -8,7 +8,7 @@ $(init)
 
 function init() {
     renderProjects()
-    creatProjects(gProjectsNum)
+    creatProjects()
     renderModal()
 }
 

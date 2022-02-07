@@ -1,16 +1,20 @@
 'use strict'
 
-var gProjectsNum = 4
-var gProjs = creatProjects(gProjectsNum);
+// var gProjectsNum = 4
+var gProjs ;
 
 
-function creatProjects(projectsNum) {
-    var projects = [];
+function creatProjects() {
 
-    for (var i = 0; i < projectsNum; i++) {
-        projects[i] = creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg')
-    }
-    return projects
+    if (!gProjs || !gProjs.length) {
+        gProjs = [
+    
+            creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg'),
+            creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg'),
+            creatProject('nhnh', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg'),
+       creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg')
+        ]}
+    
 }
 
 function creatProject(id, name, title, desc, url, imgSrc) {

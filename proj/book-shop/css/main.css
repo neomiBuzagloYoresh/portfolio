@@ -1,0 +1,148 @@
+html,
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #b21a1a,
+    #aa2221,
+    #a22928,
+    #992e2d,
+    #903332,
+    #933e45,
+    #944b57,
+    #935766,
+    #997084,
+    #9f899b,
+    #a8a1ac,
+    #b8b8b8
+  );
+  font-family: "Courier New", Courier, monospace;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+table {
+  background-color: rgba(243, 243, 243, 0.849);
+  border-collapse: collapse;
+  border-radius: 5%;
+}
+
+td,
+thead {
+  border-bottom: 2px solid #3c3e4b;
+}
+
+td img {
+  width: 100px;
+  height: 100px;
+  content: normal;
+}
+
+.add-book {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.add-book button {
+  border-radius: 15%;
+  cursor: pointer;
+}
+.add-book button:hover {
+  background-color: rgb(179, 179, 170);
+  cursor: pointer;
+}
+input:focus {
+  background-color: rgb(139, 139, 126);
+  cursor: pointer;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.pages button:hover {
+  background-color: lightgrey;
+}
+
+.modal {
+  background-color: #111;
+  padding: 20px;
+  position: absolute;
+  top: 0px;
+  left: 150%;
+  height: 100vh;
+  min-width: 300px;
+  text-align: center;
+  color: beige;
+  font-size: 20px;
+}
+.modal.open {
+  left: 50%;
+  transition: left 0.5s;
+}
+.modal h3 {
+  color: rgb(187, 183, 173);
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.modal h4 span {
+  color: rgb(206, 118, 103);
+}
+.modal > p {
+  text-align: left;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.modal img {
+  width: 125px;
+  border: 3px solid white;
+  /* height: 200px; */
+}
+
+.number button {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Read {
+  border-radius: 15%;
+  font-family: "Times New Roman", Times, serif;
+}
+.Read:hover {
+  background-color: grey;
+}
+.update {
+  border-radius: 15%;
+  font-family: "Times New Roman", Times, serif;
+}
+.update:hover {
+  background-color: lightgreen;
+}
+.delete {
+  border-radius: 15%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.delete:hover {
+  background-color: rgb(189, 23, 23);
+}
+
+.book-name {
+  cursor: pointer;
+}
+.book-name:hover {
+  background-color: rgb(174, 176, 179);
+}
+
+.book-price {
+  cursor: pointer;
+}
+
+.book-price:hover {
+  background-color: rgb(164, 169, 173);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touch-Nums</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body onload="init()">
+    <h1>TOUCH-NUMS</h1>
+    <!-- <h2>Timer</h2> -->
+    <div class="timer">Time: 00.000</div>
+    <div class="levels">
+      <button onclick="getLevel(16)">Easy</button>
+      <button onclick="getLevel(25)">Hard</button>
+      <button onclick="getLevel(36)">Extreme</button>
+    </div>
+
+    <div class="winner">
+      <h2>victory</h2>
+    </div>
+
+    <div><button class="new-game" onclick="newGame(this)">reset</button></div>
+
+    <table border="1" cellpadding="10">
+      <tbody class="board"></tbody>
+    </table>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
+
+<!-- <div>
+  <input type="radio" id="Easy" name="E" value="huey" checked />
+  <label for="Easy">Easy</label>
+</div>
+
+<div>
+  <input type="radio" id="Hard" name="H" value="Hard" />
+  <label for="Hard">Hard</label>
+</div>
+
+<div>
+  <input type="radio" id="Extrame" name="EX" value="Extrame" />
+  <label for="Extrame">Extrame</label>
+</div> -->

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Book-Shop</title>
+  </head>
+  <body onload="onInit()">
+    <h1>Book-Shop:</h1>
+
+    <div class="add-book">
+      <button title="Add Book" onclick="onAddBook()">
+        Add Book
+      </button>
+      <input
+        class="book-title"
+        type="text"
+        placeholder="Book Title"
+      />
+
+      <input
+        class="price"
+        type="number"
+        placeholder="Price"
+        min="0"
+      />
+      <input
+        class="ratting"
+        type="number"
+        placeholder="Rate 1-10"
+      />
+    </div>
+    <hr />
+    <div class="table-container">
+      <table border="0" cellpadding="10">
+        <thead>
+          <th>id</th>
+          <th class="book-name" onclick="onSort('title')">
+            Book Name
+          </th>
+          <th class="book-price" onclick="onSort('price')">
+            Price
+          </th>
+          <th>img</th>
+          <th>Rate</th>
+          <th>Actions</th>
+        </thead>
+        <tbody class="books-table"></tbody>
+      </table>
+    </div>
+    <div class="modal">
+      <h3></h3>
+      <img src="" alt="" />
+      <h4>Book Price: <span></span></h4>
+      <h5>Book Content:</h5>
+      <p></p>
+      <h2 class="rate">Rate:</h2>
+      <button onclick="onCloseModal()">Close</button>
+    </div>
+    <div class="pages">
+      <button onclick="onNextPage(-1)"><</button>
+      <button onclick="onNextPage(1)">></button>
+    </div>
+
+    <script src="/js/utils.service.js"></script>
+    <script src="/js/storage.service.js"></script>
+    <script src="/book.controller.js"></script>
+    <script src="/js/book.service.js"></script>
+  </body>
+</html>
