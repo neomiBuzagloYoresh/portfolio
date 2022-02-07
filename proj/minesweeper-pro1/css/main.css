@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+html,
+body {
+  background-image: linear-gradient(
+    to left bottom,
+    #000000,
+    #0a0808,
+    #12100f,
+    #171514,
+    #1c1a18,
+    #23211e,
+    #292824,
+    #2f2f2a,
+    #3a3a33,
+    #46453c,
+    #525045,
+    #5e5c4f
+  );
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: system-ui, "Segoe UI", "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+table {
+  table-layout: fixed;
+  width: 600px;
+  height: 600px;
+  /* position: relative; */
+  -webkit-box-shadow: 0px 0px 65px 29px
+    rgba(152, 173, 167, 0.27);
+  -moz-box-shadow: 0px 0px 65px 29px
+    rgba(152, 173, 167, 0.27);
+  box-shadow: 0px 0px 65px 29px rgba(152, 173, 167, 0.27);
+}
+
+td {
+  line-height: 0px;
+}
+
+.modal {
+  visibility: hidden;
+  position: absolute;
+  background-color: #555;
+  color: white;
+  padding: 100px 30px;
+  height: 300px;
+  width: 500px;
+  border-radius: 10%;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+#timer span {
+  padding: 15px;
+  letter-spacing: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.cellColor {
+  background-color: #72727250;
+  visibility: visible;
+}
+
+#reset-button {
+  display: none;
+  cursor: pointer;
+}
+
+.data-panel {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+    0 3px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: system-ui;
+  font-size: 18px;
+  height: 52px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  margin: 20px 0px 20px 30px;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+}
+
+button:hover {
+  box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
+  opacity: 0.85;
+}
+
+button:active {
+  outline: 0;
+}

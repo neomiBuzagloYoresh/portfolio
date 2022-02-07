@@ -16,7 +16,7 @@ function init() {
 
 function renderProjects() {
     var projs = getProjs()
-    console.log(projs);
+    
     var strHTMLs = projs.map((project, idx) =>
         `<div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal"  href="#portfolioModal${idx + 1}">
@@ -65,38 +65,30 @@ function renderModal() {
                      
                       <h2>${project.name}</h2>
                       <p class="item-intro text-muted">
-                        Lorem ipsum dolor sit amet
-                        consectetur.
+                      ${project.desc}
                       </p>
+                     
                       <img
                         class="img-fluid d-block mx-auto"
-                        src="img/portfolio/04-full.jpg"
+                        src="${project.imgSrc}"
                         alt=""
                       />
                       <p>
-                        Use this area to describe your
-                        project. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Est
-                        blanditiis dolorem culpa incidunt
-                        minus dignissimos deserunt repellat
-                        aperiam quasi sunt officia expedita
-                        beatae cupiditate, maiores
-                        repudiandae, nostrum, reiciendis
-                        facere nemo!
+                      ${project.desc}
+                       
                       </p>
                       <ul class="list-inline">
                         <li>Date: January 2017</li>
-                        <li>Client: Lines</li>
-                        <li>Category: Branding</li>
+                        <li>Date: January 2017</li>
+                      
                       </ul>
-                      <button
+                     <button
                       class="btn btn-primary "
                       type="button"
                     >
                       <a href="${project.url}" target="_blank">
                      Proj
                     </button>
-
                       <button
                         class="btn btn-primary"
                         data-dismiss="modal"
@@ -105,6 +97,7 @@ function renderModal() {
                         <i class="fa fa-times"></i>
                         Close Project
                       </button>
+                  
                     </div>
                   </div>
                 </div>

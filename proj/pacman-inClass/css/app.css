@@ -1,0 +1,136 @@
+html,
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pacman {
+  height: 20px;
+  width: 20px;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(255, 255, 255, 0.3);
+  background: #1a1a1a;
+  font-size: xx-large;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.rainbow-box span {
+  color: black;
+  display: block;
+}
+
+.rainbow-box {
+  display: none;
+  position: absolute;
+  text-align: center;
+  font-size: xx-large;
+  background-color: #302244;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+  height: 300px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+.reset {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  display: none;
+
+  margin: auto;
+  margin-top: 100px;
+}
+
+.reset:active,
+.reset:hover {
+  outline: 0;
+}
+
+.reset span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.reset:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .reset {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+/* .modal-victory {
+  display: none;
+  color: black;
+  text-align: center;
+} */
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+/* .modal {
+  display: none;
+  background-color: rgb(231, 241, 85);
+  padding: 10px;
+  margin-top: 200px;
+  position: absolute;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  color: black;
+} */
+
+/* .reset {
+  display: none;
+  color: rgb(240, 12, 0);
+  margin: auto;
+  margin-top: 100px;
+} */
