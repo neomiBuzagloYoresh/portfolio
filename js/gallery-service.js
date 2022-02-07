@@ -27,4 +27,21 @@ function creatProject(id, name, title, desc, url, imgSrc) {
     }
 }
 
+
+function getProjById(projId) {
+    const project = gProjs.find((project) => projId === project.id)
+    return project
+  }
+  
+
+// function getProj() {
+    
+
+//     return[{
+
+//     }
+
+//     ]
+// }
+
 // console.log(' creatProject', creatProject('pacman', 'pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo'));
