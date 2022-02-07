@@ -7,16 +7,17 @@ $(init)
 // })
 
 function init() {
-    renderProjects()
     creatProjects()
+    renderProjects()
     renderModal()
 }
 
 
 
 function renderProjects() {
-
-    var strHTMLs = gProjs.map((project, idx) =>
+    var projs = getProjs()
+    console.log(projs);
+    var strHTMLs = projs.map((project, idx) =>
         `<div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal"  href="#portfolioModal${idx + 1}">
           <div class="portfolio-hover">
@@ -88,6 +89,14 @@ function renderModal() {
                         <li>Client: Lines</li>
                         <li>Category: Branding</li>
                       </ul>
+                      <button
+                      class="btn btn-primary "
+                      type="button"
+                    >
+                      <a href="${project.url}" target="_blank">
+                     Proj
+                    </button>
+
                       <button
                         class="btn btn-primary"
                         data-dismiss="modal"

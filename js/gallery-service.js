@@ -9,12 +9,19 @@ function creatProjects() {
     if (!gProjs || !gProjs.length) {
         gProjs = [
     
-            creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg'),
-            creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg'),
+            creatProject('inPictur', 'inPictur', 'Pic Game', 'how in the picture?', 'proj/inPicture', 'proj/inPicture/picture/1.jpg'),
+
+            creatProject('touchnums', 'Touch-Nums', 'Touch-Nums', 'touch fast', 'proj/touch-nums', 'img/portfolio/01-thumbnail.jpg'),
+
             creatProject('nhnh', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg'),
-       creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg')
+             creatProject('pacman', 'Pacman', 'best game', 'very good', 'https://www.facebook.com/neomi.buzaglo', 'img/portfolio/01-thumbnail.jpg')
         ]}
-    
+}
+
+// vendor/jquery/jquery.min.js
+
+function getProjs(){
+    return gProjs
 }
 
 function creatProject(id, name, title, desc, url, imgSrc) {
