@@ -63,7 +63,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  -webkit-tap-highlight-color: #fed136;
+  -webkit-tap-highlight-color: #2c2a20;
 }
 .offcanvas-btn {
   z-index: 100000;
@@ -194,7 +194,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/forest 2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
