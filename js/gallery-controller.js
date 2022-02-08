@@ -82,7 +82,7 @@ function renderModal() {
         
         
                 <a href="${project.url}" target="_blank">
-                <button type="button" class="btn btn-success" >Check it Out</button>
+                <button type="button" class="btn btn-secondary" >Check it Out</button>
                 </a>
                         
                         

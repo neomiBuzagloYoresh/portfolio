@@ -13,7 +13,7 @@ function creatProjects() {
 
             creatProject('touchnums', 'Touch-Nums', 'Touch-Nums', 'touch fast', 'proj/touch-nums/', 'proj/touch-nums/img/toch nums.png'),
 
-            creatProject('book-shop', 'book-shop', 'book-shop', 'a book-shop proj', 'proj/book-shop-fix', 'proj/book-shop-fix/img/peter pan.jpg'),
+            creatProject('book-shop', 'book-shop', 'book-shop', 'a book-shop proj', 'proj/book-shop1', 'proj/book-shop1/img/peter pan.jpg'),
 
             creatProject('pacman', 'Pacman', 'Pacman', 'play the pacman game', 'proj/pacman-inClass/', 'proj/pacman-inClass/img/pacman.png'),
 
