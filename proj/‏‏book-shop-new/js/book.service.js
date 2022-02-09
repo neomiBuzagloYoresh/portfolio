@@ -104,7 +104,7 @@ function _createBooks() {
             _createBook('Harry Potter', 130, 10, 'harry-potter'),
             _createBook('Hobbit', 85, 2, 'hobbit'),
             _createBook('Little Prince', 145, 1, 'little prince'),
-            _createBook('Peter Pan', 112, 2, 'peter pan'),
+            _createBook('Peter Pan', 112, 2, 'peter-pan-fix'),
             _createBook('Book Of Name', 89, 3, 'book of name'),
             _createBook('Life In Woods', 50, 4, 'Life In Woods'),
             _createBook('Beneath A Scarlet Sky', 79, 1, 'Beneath A Scarlet Sky'),
@@ -135,33 +135,22 @@ function makeId(length = 3) {
 
 
 
+// function turnPage(direction) {
+//     if ('prev' === direction) {
+//         gPageIdx--;
+//         // console.log('gPageIdx', gPageIdx);
 
-
-
-
-// function _createBook(bookName, bookPrice, imgUrl = 'img/harry-potter.jpg') {
-//     const book = {
-//         id: makeId(),
-//         bookName,
-//         bookPrice,
-//         imgUrl
+//     } else if ('next' === direction) {
+//         gPageIdx++;
+//         // console.log('gPageIdx', gPageIdx);
+//     } else {
+//         gPageIdx = direction;
+//         // console.log('gPageIdx', gPageIdx);
 //     }
-//     return book
-// }
-
-
-// function addBook(vendor) {
-//     const book = _createBook(bookName, bookPrice, imgUrl = 'img/harry-potter.jpg')
-//     gBooks.unshift(book)
-//     _saveCarsToStorage()
-//     return book
-// }
-
-
-
-// function updateBook(bookId, newPrice) {
-//     const book = gBooks.find((book) => book.id === bookId)
-//     book.bookPrice = newPrice
-//     _saveCarsToStorage()
-//     return book
+//     if (0 > (gPageIdx * PAGE_SIZE)) {
+//         gPageIdx++;
+//     }
+//     if (gBooks.length <= (gPageIdx * PAGE_SIZE)) {
+//         gPageIdx--;
+//     }
 // }

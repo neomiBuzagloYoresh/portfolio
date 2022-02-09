@@ -3,6 +3,7 @@
 function onInit() {
     renderBooks()
     doTrans();
+    renderPageButtons()
 }
 
 
@@ -40,6 +41,8 @@ function onNextPage(diff) {
     setNextPage(diff)
     renderBooks()
 }
+
+
 
 
 
@@ -126,8 +129,8 @@ function plusRatting(bookId) {
 }
 
 
-function onDeleteBook(bookId,ev) {
-  
+function onDeleteBook(bookId, ev) {
+
     ev.stopPropagation();
 
     if (confirm(getTrans('sure'))) {
@@ -141,13 +144,23 @@ function onSetLang(lang) {
     if (lang === 'he') document.body.classList.add('rtl')
     else document.body.classList.remove('rtl')
     // doTrans();
-    
+
     renderBooks()
 }
 
 // function renderConversion() {
 //     var elPrice = document.querySelectorAll('[data-price]')
 //     elPrice.forEach(price => {
-        
+
 //     });
+// }
+
+
+// function renderPageButtons() {
+//     const elPageBtns = document.querySelector('.page-btns');
+//     for (let i = 0; i < (gBooks.length / PAGE_SIZE); i++) {
+//         // console.log('gBooks.length', gBooks.length);
+//         // console.log('PAGE_SIZE', PAGE_SIZE);
+//         elPageBtns.innerHTML += `<button id="page-btn-${i}" class="page-btn" onclick="onTurnPage(${i})">${i + 1}</button>`;
+//     }
 // }

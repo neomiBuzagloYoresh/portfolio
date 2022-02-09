@@ -18,7 +18,9 @@ function init() {
 function renderProjects() {
     var projs = getProjs()
     
+    
     var strHTMLs = projs.map((project, idx) =>
+    
         `<div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal"  href="#portfolioModal${idx + 1}">
           <div class="portfolio-hover">
@@ -35,9 +37,9 @@ function renderProjects() {
         </div>`);
 
     document.querySelector('.projects-row').innerHTML = strHTMLs.join('');
+    console.log('project',projs)
 
 }
-
 
    
 function renderModal() {
