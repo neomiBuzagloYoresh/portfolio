@@ -4,16 +4,16 @@
 var gProjs;
 
 
-function creatProjects() {
+function createProjects() {
 
     if (!gProjs || !gProjs.length) {
         gProjs = [
+            creatProject('book-shop', 'book-shop', 'book-shop', 'a book-shop proj', 'proj/book-shop-new/', 'proj/book-shop-new/img/peter-pan1.jpg'),
 
             creatProject('inPictur', 'inPictur', 'Pic Game', 'how in the picture?', 'proj/inPicture', 'proj/inPicture/picture/1.jpg'),
 
             creatProject('touchnums', 'Touch-Nums', 'Touch-Nums', 'touch fast', 'proj/touch-nums/', 'proj/touch-nums/img/toch nums.png'),
 
-            creatProject('book-shop', 'book-shop', 'book-shop', 'a book-shop proj', 'proj/book-shop-new/', 'proj/book-shop-new/img/peter-pan-fix.jpg'),
 
             creatProject('pacman', 'Pacman', 'Pacman', 'play the pacman game', 'proj/pacman-inClass/', 'proj/pacman-inClass/img/pacman.png'),
 

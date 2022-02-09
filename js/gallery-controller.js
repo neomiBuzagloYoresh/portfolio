@@ -8,7 +8,7 @@ $(init)
 // })
 
 function init() {
-    creatProjects()
+    createProjects()
     renderProjects()
     renderModal()
 }
@@ -18,10 +18,9 @@ function init() {
 function renderProjects() {
     var projs = getProjs()
     
+    console.log('project',projs)
     
-    var strHTMLs = projs.map((project, idx) =>
-    
-        `<div class="col-md-4 col-sm-6 portfolio-item">
+    var strHTMLs = projs.map((project, idx) =>( `<div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal"  href="#portfolioModal${idx + 1}">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -34,10 +33,9 @@ function renderProjects() {
           <h4>${project.name}</h4>
           <p class="text-muted">${project.desc}</p>
         </div>
-        </div>`);
+        </div>`))
 
     document.querySelector('.projects-row').innerHTML = strHTMLs.join('');
-    console.log('project',projs)
 
 }
 

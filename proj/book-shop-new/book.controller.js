@@ -3,7 +3,7 @@
 function onInit() {
     renderBooks()
     doTrans();
-    renderPageButtons()
+    // renderPageButtons()
 }
 
 
